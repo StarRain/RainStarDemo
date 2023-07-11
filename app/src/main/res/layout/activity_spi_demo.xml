@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <Button
+        android:id="@+id/strategy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="策略模式" />
+
+    <Button
+        android:id="@+id/service_loader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ServiceLoader"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:id="@+id/strategy_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textColor="#FF0000"
+        android:textSize="16dp"
+        tools:text="策略模式描述" />
+
+    <TextView
+        android:id="@+id/service_loader_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textColor="#0000FF"
+        android:textSize="16dp"
+        tools:text="SPI迭代器描述" />
+
+</LinearLayout>
