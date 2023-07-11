@@ -20,7 +20,8 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".spi.SpiDemoActivity" />
+        <activity android:name=".spi.java.SpiDemoActivity" />
+        <activity android:name=".spi.kt.SpiDemoActivity" />
     </application>
 
 </manifest>

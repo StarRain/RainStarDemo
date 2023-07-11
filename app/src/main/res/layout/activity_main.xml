@@ -9,10 +9,17 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/spi_demo"
+            android:id="@+id/spi_demo_java"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="SpiDemo"
+            android:text="SpiDemo-Java"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/spi_demo_kotlin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SpiDemo-Kotlin"
             android:textAllCaps="false" />
     </LinearLayout>
 

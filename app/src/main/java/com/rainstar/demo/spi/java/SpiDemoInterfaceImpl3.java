@@ -1,4 +1,4 @@
-package com.rainstar.demo.spi;
+package com.rainstar.demo.spi.java;
 
 import android.util.Log;
 
@@ -6,10 +6,10 @@ import android.util.Log;
  * Created by rainstar on 2023/7/11.
  */
 public class SpiDemoInterfaceImpl3 implements SpiDemoInterface {
-    private static final String TAG = "SpiDemo";
+    private static final String TAG = "SpiDemo-java";
 
     @Override
-    public void displayImage(String mode) {
+    public void displayName(String mode) {
         Log.d(TAG, String.format("%s-%s", mode, this.getClass().getSimpleName()));
     }
 
