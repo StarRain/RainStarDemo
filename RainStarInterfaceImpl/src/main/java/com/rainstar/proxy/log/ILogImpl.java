@@ -5,14 +5,14 @@ import android.util.Log;
 /**
  * Created by rainstar on 2023/7/11.
  */
-public class ILogUtilImpl implements ILog {
-    private static ILogUtilImpl sInstance;
+public class ILogImpl implements ILog {
+    private static ILogImpl sInstance;
 
-    public ILogUtilImpl getInstance() {
+    public ILogImpl getInstance() {
         if (sInstance == null) {
-            synchronized (ILogUtilImpl.class) {
+            synchronized (ILogImpl.class) {
                 if (sInstance == null) {
-                    sInstance = new ILogUtilImpl();
+                    sInstance = new ILogImpl();
                 }
             }
         }
