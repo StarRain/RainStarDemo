@@ -3,7 +3,7 @@ package com.rainstar.proxy.log;
 /**
  * Created by rainstar on 2023/7/11.
  */
-public interface NativeLogInterface {
+public interface ILog {
     void logi(String tag, String message);
 
     void logd(String tag, String message);

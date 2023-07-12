@@ -1,10 +1,11 @@
 package com.rainstar.proxy.log;
 
 /**
- * Created by rainstar on 2023/7/11.
+ * Created by rainstar on 2023/7/12.
+ *
+ * 兜底实现
  */
-public class NativeLogInterfaceImpl implements NativeLogInterface{
-
+public class ILogVirtual implements ILog {
     @Override
     public void logi(String tag, String message) {
 

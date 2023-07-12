@@ -1,11 +1,10 @@
 package com.rainstar.demo;
 
 import android.content.Intent;
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.rainstar.demo.spi.java.SpiDemoActivity;
+import com.rainstar.proxy.RainStarProxyService;
+import com.rainstar.proxy.toast.IToast;
 
 public class MainActivity extends BaseActivity {
 
@@ -32,7 +31,12 @@ public class MainActivity extends BaseActivity {
 
     @Override
     protected void setupView() {
-
+        findViewById(R.id.debug_proxy).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                RainStarProxyService.getService(IToast.class).showToast("隔离层Toast");
+            }
+        });
     }
 
     @Override
