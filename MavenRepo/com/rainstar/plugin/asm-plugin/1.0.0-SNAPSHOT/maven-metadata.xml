@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>com.rainstar.plugin</groupId>
+  <artifactId>asm-plugin</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20230713.150541</timestamp>
+      <buildNumber>14</buildNumber>
+    </snapshot>
+    <lastUpdated>20230713150541</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>jar</extension>
+        <value>1.0.0-20230713.150541-14</value>
+        <updated>20230713150541</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>1.0.0-20230713.150541-14</value>
+        <updated>20230713150541</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>
