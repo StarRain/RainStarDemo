@@ -6,7 +6,7 @@ import android.util.Log;
  * Created by rainstar on 2023/7/11.
  */
 public class ILogImpl implements ILog {
-    private static ILogImpl sInstance;
+    private static volatile ILogImpl sInstance;
 
     public ILogImpl getInstance() {
         if (sInstance == null) {
