@@ -6,10 +6,14 @@ import android.util.Log;
  * Created by rainstar on 2023/7/11.
  */
 public class ILogImpl implements ILog {
+    /**
+     * 为了防止出现 DCL(双重检锁)失效问题，加上 volatile 关键字
+     */
     private static volatile ILogImpl sInstance;
 
     public ILogImpl getInstance() {
         if (sInstance == null) {
+            // 同步锁，保证同一时刻只有一个线程进入该代码块。
             synchronized (ILogImpl.class) {
                 if (sInstance == null) {
                     sInstance = new ILogImpl();
